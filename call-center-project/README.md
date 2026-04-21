@@ -35,4 +35,4 @@ agent handling, queue times, and disposition outcomes.
 Phase 1 — Week 1 — Environment setup complete
 
 ## Author
-Your Name — Data Analyst transitioning to Data Engineer
+Andrej Ristikj — Data Analyst transitioning to Data Engineer
