@@ -15,3 +15,6 @@ SELECT strftime('%Y-%W', date) as week,
 FROM contacts
 GROUP BY week
 ORDER BY week ASC
+
+
+
