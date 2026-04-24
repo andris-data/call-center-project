@@ -204,7 +204,7 @@ if 'ctr_init_tstamp_tz' in df.columns:
     ).dt.day_name()
     print("      Added: call_hour, call_dow")
 
-# extract client code from queue name e.g. [006] (BEA) > BEA
+# extract client code from queue name e.g. [006]
 if 'queue' in df. columns:
     df['client_code'] = df['queue'].str.extract(r'\(([^)]+)\)')
     df['client_code'] = df['client_code'].fillna('ClientUnknown')
