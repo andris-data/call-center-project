@@ -17,4 +17,16 @@ GROUP BY week
 ORDER BY week ASC
 
 
+-- Exercise 3: Call volume and abandonment rate by Client
+SELECT
+    client_code,
+    COUNT(contact_id) AS total_calls,
+    SUM(is_abandoned) AS total_abandoned,
+    ROUND(SUM(is_abandoned) * 100.0 / COUNT(contact_id), 1) AS abandonment_rate
+FROM contacts
+GROUP BY client_code
+HAVING COUNT(contact_id) > 1000
+AND ROUND(SUM(is_abandoned) * 100.0 / COUNT(contact_id), 1) > 10
+ORDER BY abandonment_rate DESC
+
 
