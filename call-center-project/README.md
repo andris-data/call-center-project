@@ -20,7 +20,7 @@ This pipeline solves that problem end to end.
 - Validates output quality using Athena before loading
 - Loads into Redshift and transforms using dbt models
 - Runs automatically every night via Apache Airflow on MWAA
-- Alerts the team via Slack if anything breaks
+- Alerts the team if anything breaks
 
 ## Architecture
 
